@@ -83,10 +83,11 @@
     "ignore": [
       { "matchValue": "scss/all.scss", "dependenciesAny": ["wp", "magento"] },
       { "matchValue": "scss/base/_base-reset.scss", "dependenciesAny":["other_cms", "wp", "bootstrap", "magento"] },
+      { "matchValue": "Gruntfile.js", "dependenciesAll":["wp", "foundation"] },
       { "matchValue": "scss/index.html", "dependenciesAny": ["magento"] }
     ],
     "rename": [
-      { "matchValue": {"scss/app.scss":"scss/style1.scss"}, "dependenciesAny": ["foundation"] }
+      { "matchValue": {"wp-Gruntfile.js":"Gruntfile.js"}, "dependenciesAll": ["wp", "foundation"] }
     ],
     "run": [
       { "matchValue": "bower install", "dependenciesAny": ["foundation"] },
