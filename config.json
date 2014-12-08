@@ -1,21 +1,94 @@
 {
-  "source": [
-    { path: "git://github.com/iMarkup/grunt-base-template.git", coflict: ["foundation"]},
-    { path: "git://github.com/iMarkup/grunt-add-cms.git", dependencies: ["cms", "wp"]},
-    { path: "git://github.com/iMarkup/grunt-add-wp.git", dependencies: ["wp"]},
-    { path: "git://github.com/iMarkup/grunt-add-bootstrap.git", dependencies: ["bootstrap"]},
-    { path: "git://github.com/iMarkup/grunt-add-magento-19.git", dependencies: ["magento"]},
-    { path: "https://github.com/iMarkup/grunt-add-foundation.git", dependencies: ["foundation"]}
+  "menu": [
+    {
+      "question": "Select project type:",
+      "caption": "Markup Only",
+      "value": "markup_only",
+      "menu": [
+        {
+          "question": "Select framework:",
+          "caption": "No framework",
+          "value": "no_framework"
+        },
+        {
+          "caption": "Bootstrap",
+          "value": "bootstrap"
+        },
+        {
+          "caption": "Zurb Foundation",
+          "value": "foundation"
+        }
+      ]
+    },
+    {
+      "caption": "Markup + CMS",
+      "value": "markup_cms",
+      "menu": [
+        {
+          "question": "Select CMS:",
+          "caption": "WordPress",
+          "value": "wp",
+          "menu": [
+            {
+              "question": "Select framework:",
+              "caption": "No framework",
+              "value": "no_framework"
+            },
+            {
+              "caption": "Bootstrap",
+              "value": "bootstrap"
+            },
+            {
+              "caption": "Zurb Foundation",
+              "value": "foundation"
+            }
+          ]
+        },
+        {
+          "caption": "Magento",
+          "value": "magento"
+        },
+        {
+          "caption": "Other CMS",
+          "value": "other_cms",
+          "menu": [
+            {
+              "question": "Select framework:",
+              "caption": "No framework",
+              "value": "no_framework"
+            },
+            {
+              "caption": "Bootstrap",
+              "value": "bootstrap"
+            },
+            {
+              "caption": "Zurb Foundation",
+              "value": "foundation"
+            }
+          ]
+        }
+      ]
+    }
   ],
-  "path": "markup",
-  "ignore": [
-    {path: "scss/all.scss", dependencies: ["wp", "magento"]},
-    {path: "scss/base/_base-reset.scss", dependencies:["cms", "wp", "bootstrap", "magento"]},
-    {path: "scss/index.html", dependencies: ["magento"]},
-  ],
-  "run": [
-    {command: "bower install", dependencies:['foundation']},
-    {command: "npm install" },
-    {command: "grunt" }
-  ]
+  "data": {
+    "path": "markup",
+    "source": [
+      { "matchValue": "git://github.com/iMarkup/grunt-base-template.git", "excludeIf": ["foundation"] },
+      { "matchValue": "git://github.com/iMarkup/grunt-add-cms.git", "dependenciesAny": ["other_cms", "wp"] },
+      { "matchValue": "git://github.com/iMarkup/grunt-add-wp.git", "dependenciesAll": ["wp"] },
+      { "matchValue": "git://github.com/iMarkup/grunt-add-bootstrap.git", "dependenciesAny": ["bootstrap"] },
+      { "matchValue": "git://github.com/iMarkup/grunt-add-magento-19.git", "dependenciesAny": ["magento"] },
+      { "matchValue": "https://github.com/iMarkup/grunt-add-foundation.git", "dependenciesAny": ["foundation"] }
+    ],
+    "ignore": [
+      { "matchValue": "scss/all.scss", "dependenciesAny": ["wp", "magento"] },
+      { "matchValue": "scss/base/_base-reset.scss", "dependenciesAny":["other_cms", "wp", "bootstrap", "magento"] },
+      { "matchValue": "scss/index.html", "dependenciesAny": ["magento"] }
+    ],
+    "run": [
+      { "matchValue": "bower install", "dependenciesAny": ["foundation"] },
+      { "matchValue": "npm install" },
+      { "matchValue": "grunt" }
+    ]
+  }
 }
