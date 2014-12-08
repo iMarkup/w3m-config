@@ -85,6 +85,9 @@
       { "matchValue": "scss/base/_base-reset.scss", "dependenciesAny":["other_cms", "wp", "bootstrap", "magento"] },
       { "matchValue": "scss/index.html", "dependenciesAny": ["magento"] }
     ],
+    "rename": [
+      { "matchValue": {"scss/app.scss":"scss/style1.scss"}, "dependenciesAny": ["foundation"] }
+    ],
     "run": [
       { "matchValue": "bower install", "dependenciesAny": ["foundation"] },
       { "matchValue": "npm install" },
