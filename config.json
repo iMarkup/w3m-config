@@ -1,0 +1,21 @@
+{
+  "source": [
+    { path: "git://github.com/iMarkup/grunt-base-template.git", coflict: ["foundation"]},
+    { path: "git://github.com/iMarkup/grunt-add-cms.git", dependencies: ["cms", "wp"]},
+    { path: "git://github.com/iMarkup/grunt-add-wp.git", dependencies: ["wp"]},
+    { path: "git://github.com/iMarkup/grunt-add-bootstrap.git", dependencies: ["bootstrap"]},
+    { path: "git://github.com/iMarkup/grunt-add-magento-19.git", dependencies: ["magento"]},
+    { path: "https://github.com/iMarkup/grunt-add-foundation.git", dependencies: ["foundation"]}
+  ],
+  "path": "markup",
+  "ignore": [
+    {path: "scss/all.scss", dependencies: ["wp", "magento"]},
+    {path: "scss/base/_base-reset.scss", dependencies:["cms", "wp", "bootstrap", "magento"]},
+    {path: "scss/index.html", dependencies: ["magento"]},
+  ],
+  "run": [
+    {command: "bower install", dependencies:['foundation']},
+    {command: "npm install" },
+    {command: "grunt" }
+  ]
+}
