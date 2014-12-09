@@ -84,10 +84,12 @@
       { "matchValue": "scss/all.scss", "dependenciesAny": ["wp", "magento"] },
       { "matchValue": "scss/base/_cms-reset.scss", "dependenciesAny":["bootstrap", "magento", "foundation"] },
       { "matchValue": "scss/base/_base-reset.scss", "dependenciesAny":["other_cms", "wp", "bootstrap", "magento", "foundation"] },
+      { "matchValue": "index.html", "dependenciesAll":["bootstrap", "wp"] },
       { "matchValue": "scss/index.html", "dependenciesAny": ["magento"] }
     ],
     "rename": [
-      { "matchValue": {"wp-Gruntfile.js":"Gruntfile.js"}, "dependenciesAll": ["wp", "foundation"] }
+      { "matchValue": {"wp-bootstrap-style.scss":"style.scss"}, "dependenciesAll": ["wp", "bootstrap"] },
+      { "matchValue": {"wp-bootstrap-index.html":"index.html"}, "dependenciesAll": ["wp", "bootstrap"] }
     ],
     "run": [
       { "matchValue": "bower install", "dependenciesAny": ["foundation"] },
