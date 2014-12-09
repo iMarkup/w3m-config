@@ -83,14 +83,14 @@
     "ignore": [
       { "matchValue": "scss/all.scss", "dependenciesAny": ["wp", "magento"] },
       { "matchValue": "wp-bootstrap-index.html", "excludeIf": ["bootstrap", "wp"] },
-      { "matchValue": "wp-bootstrap-style.scss", "excludeIf": ["bootstrap", "wp"] },
+      { "matchValue": "scss/wp-bootstrap-style.scss", "excludeIf": ["bootstrap", "wp"] },
       { "matchValue": "scss/base/_cms-reset.scss", "dependenciesAny":["bootstrap", "magento", "foundation"] },
       { "matchValue": "scss/base/_base-reset.scss", "dependenciesAny":["other_cms", "wp", "bootstrap", "magento", "foundation"] },
       { "matchValue": "index.html", "dependenciesAll":["bootstrap", "wp"] },
       { "matchValue": "scss/index.html", "dependenciesAny": ["magento"] }
     ],
     "rename": [
-      { "matchValue": {"wp-bootstrap-style.scss":"style.scss"}, "dependenciesAll": ["wp", "bootstrap"] },
+      { "matchValue": {"scss/wp-bootstrap-style.scss":"style.scss"}, "dependenciesAll": ["wp", "bootstrap"] },
       { "matchValue": {"wp-bootstrap-index.html":"index.html"}, "dependenciesAll": ["wp", "bootstrap"] }
     ],
     "run": [
