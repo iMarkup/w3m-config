@@ -87,11 +87,18 @@
       { "matchValue": "scss/base/_cms-reset.scss", "dependenciesAny":["bootstrap", "magento", "foundation"] },
       { "matchValue": "scss/base/_base-reset.scss", "dependenciesAny":["other_cms", "wp", "bootstrap", "magento", "foundation"] },
       { "matchValue": "index.html", "dependenciesAll":["bootstrap", "wp"] },
-      { "matchValue": "scss/index.html", "dependenciesAny": ["magento"] }
+      { "matchValue": "scss/app.scss", "dependenciesAll":["foundation", "wp"] },
+      { "matchValue": "scss/index.html", "dependenciesAny": ["magento"] },
+      { "matchValue": "wp-foundation-grunt-settings.js", "excludeIf": ["foundation", "wp"] },
+      { "matchValue": "wp-foundation-index.html", "excludeIf": ["foundation", "wp"] },
+      { "matchValue": "scss/wp-foundation-app.scss", "excludeIf": ["foundation", "wp"] },
     ],
     "rename": [
       { "matchValue": {"scss/wp-bootstrap-style.scss":"style.scss"}, "dependenciesAll": ["wp", "bootstrap"] },
-      { "matchValue": {"wp-bootstrap-index.html":"index.html"}, "dependenciesAll": ["wp", "bootstrap"] }
+      { "matchValue": {"wp-bootstrap-index.html":"index.html"}, "dependenciesAll": ["wp", "bootstrap"] },
+      { "matchValue": {"wp-foundation-grunt-settings.js":"grunt-settings.js"}, "dependenciesAll": ["wp", "foundation"] },
+      { "matchValue": {"wp-foundation-index.html":"index.html"}, "dependenciesAll": ["wp", "foundation"] },
+      { "matchValue": {"scss/wp-foundation-app.scss":"scss/app.scss"}, "dependenciesAll": ["wp", "foundation"] }
     ],
     "run": [
       { "matchValue": "bower install", "dependenciesAny": ["foundation"] },
