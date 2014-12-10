@@ -94,7 +94,6 @@
   "data": {
     "path": "markup",
     "source": [
-      { "matchValue": "git://github.com/iMarkup/grunt-base-template.git", "excludeIf": ["foundation"] },
       { "matchValue": "git://github.com/iMarkup/grunt-add-cms.git", "dependenciesAny": ["other_cms", "wp"] },
       { "matchValue": "git://github.com/iMarkup/grunt-add-wp.git", "dependenciesAll": ["wp"] },
       { "matchValue": "git://github.com/iMarkup/grunt-add-bootstrap.git", "dependenciesAny": ["bootstrap"] },
@@ -103,6 +102,7 @@
     ],
     "ignore": [
       { "matchValue": "scss/all.scss", "dependenciesAny": ["wp", "magento"] },
+      { "matchValue": "scss/all.scss", "dependenciesAny": ["foundation"] },
       { "matchValue": "wp-bootstrap-index.html", "excludeIf": ["wp"] },
       { "matchValue": "scss/wp-bootstrap-style.scss", "excludeIf": ["wp"] },
       { "matchValue": "scss/base/_cms-reset.scss", "dependenciesAny":["bootstrap", "magento", "foundation"] },
