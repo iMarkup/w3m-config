@@ -94,11 +94,11 @@
   "data": {
     "path": "markup",
     "source": [
-      { "matchValue": "git://github.com/iMarkup/grunt-add-cms.git", "excludeIf": ["all"] },
+      { "matchValue": "git://github.com/iMarkup/grunt-base-template.git", "excludeIf": ["all"] },
       { "matchValue": "git://github.com/iMarkup/grunt-add-cms.git", "dependenciesAny": ["other_cms", "wp"] },
       { "matchValue": "git://github.com/iMarkup/grunt-add-wp.git", "dependenciesAll": ["wp"] },
       { "matchValue": "git://github.com/iMarkup/grunt-add-bootstrap.git", "dependenciesAny": ["bootstrap"] },
-      { "matchValue": "https://github.com/iMarkup/grunt-add-foundation.git", "dependenciesAny": ["foundation"] },
+      { "matchValue": "git://github.com/iMarkup/grunt-add-foundation.git", "dependenciesAny": ["foundation"] },
       { "matchValue": "git://github.com/iMarkup/grunt-add-magento-19.git", "dependenciesAny": ["magento"] }
     ],
     "ignore": [
