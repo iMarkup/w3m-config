@@ -94,6 +94,7 @@
   "data": {
     "path": "markup",
     "source": [
+      { "matchValue": "git://github.com/iMarkup/grunt-add-cms.git", "excludeIf": ["all"] },
       { "matchValue": "git://github.com/iMarkup/grunt-add-cms.git", "dependenciesAny": ["other_cms", "wp"] },
       { "matchValue": "git://github.com/iMarkup/grunt-add-wp.git", "dependenciesAll": ["wp"] },
       { "matchValue": "git://github.com/iMarkup/grunt-add-bootstrap.git", "dependenciesAny": ["bootstrap"] },
