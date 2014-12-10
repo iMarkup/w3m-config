@@ -91,7 +91,7 @@
       { "matchValue": "scss/index.html", "dependenciesAny": ["magento"] },
       { "matchValue": "wp-foundation-grunt-settings.js", "excludeIf": ["foundation", "wp"] },
       { "matchValue": "wp-foundation-index.html", "excludeIf": ["foundation", "wp"] },
-      { "matchValue": "scss/wp-foundation-app.scss", "excludeIf": ["foundation", "wp"] },
+      { "matchValue": "scss/wp-foundation-app.scss", "excludeIf": ["foundation", "wp"] }
     ],
     "rename": [
       { "matchValue": {"scss/wp-bootstrap-style.scss":"style.scss"}, "dependenciesAll": ["wp", "bootstrap"] },
