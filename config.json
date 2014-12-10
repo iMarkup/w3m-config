@@ -106,6 +106,7 @@
       { "matchValue": "wp-bootstrap-index.html", "excludeIf": ["wp"] },
       { "matchValue": "scss/wp-bootstrap-style.scss", "excludeIf": ["wp"] },
       { "matchValue": "scss/base/_cms-reset.scss", "dependenciesAny":["bootstrap", "magento", "foundation"] },
+      { "matchValue": "scss/base/_markup-variables.scss", "dependenciesAny":["bootstrap", "magento", "foundation"] },
       { "matchValue": "scss/base/_base-reset.scss", "dependenciesAny":["other_cms", "wp", "bootstrap", "magento", "foundation"] },
       { "matchValue": "index.html", "dependenciesAll":["bootstrap", "wp"] },
       { "matchValue": "scss/app.scss", "dependenciesAll":["foundation", "wp"] },
