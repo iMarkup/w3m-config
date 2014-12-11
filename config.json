@@ -117,7 +117,7 @@
       { "matchValue": "scss/wp-foundation-app.scss", "excludeIf": ["wp"] }
     ],
     "rename": [
-      { "matchValue": {"scss/wp-bootstrap-style.scss":"style.scss"}, "dependenciesAll": ["wp", "bootstrap"] },
+      { "matchValue": {"scss/wp-bootstrap-style.scss":"scss/style.scss"}, "dependenciesAll": ["wp", "bootstrap"] },
       { "matchValue": {"wp-bootstrap-index.html":"index.html"}, "dependenciesAll": ["wp", "bootstrap"] },
       { "matchValue": {"wp-foundation-grunt-settings.js":"grunt-settings.js"}, "dependenciesAll": ["wp", "foundation"] },
       { "matchValue": {"wp-foundation-index.html":"index.html"}, "dependenciesAll": ["wp", "foundation"] },
