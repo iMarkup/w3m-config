@@ -104,6 +104,7 @@
     "ignore": [
       { "matchValue": "scss/all.scss", "dependenciesAny": ["wp", "magento"] },
       { "matchValue": "scss/all.scss", "dependenciesAny": ["foundation"] },
+      { "matchValue": "scss/style.scss", "dependenciesAny": ["foundation"] },
       { "matchValue": "wp-bootstrap-index.html", "excludeIf": ["wp"] },
       { "matchValue": "scss/wp-bootstrap-style.scss", "excludeIf": ["wp"] },
       { "matchValue": "scss/base/_cms-reset.scss", "dependenciesAny":["bootstrap", "magento", "foundation"] },
