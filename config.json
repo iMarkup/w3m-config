@@ -1,7 +1,7 @@
 {
   "updateMenu": [
     {
-      "question": "2005–2014 All Rights Reserved. P2H, Inc. & echo.Select action:",
+      "question": "2005–2014 All Rights Reserved. P2H, Inc. \n Select action:",
       "caption": "Continue project",
       "value": "project_continue",
       "run": [
