@@ -103,8 +103,8 @@
       { "matchValue": "git://github.com/iMarkup/grunt-add-magento-19.git", "dependenciesAny": ["magento"] }
     ],
     "ignore": [
-      { "matchValue": "scss/all.scss", "dependenciesAny": ["wp", "magento"] },
-      { "matchValue": "scss/all.scss", "dependenciesAny": ["foundation"] },
+      { "matchValue": "scss/main.scss", "dependenciesAny": ["wp", "magento"] },
+      { "matchValue": "scss/main.scss", "dependenciesAny": ["foundation"] },
       { "matchValue": "scss/style.scss", "dependenciesAny": ["foundation"] },
       { "matchValue": "wp-bootstrap-index.html", "excludeIf": ["wp"] },
       { "matchValue": "scss/wp-bootstrap-style.scss", "excludeIf": ["wp"] },
