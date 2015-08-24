@@ -104,16 +104,22 @@
     ],
     "ignore": [
       { "matchValue": "scss/main.scss", "dependenciesAny": ["wp", "magento"] },
+
       { "matchValue": "scss/main.scss", "dependenciesAny": ["foundation"] },
-      { "matchValue": "scss/vendors/_normalize.scss", "dependenciesAny": ["foundation", "bootstrap"] },
       { "matchValue": "scss/style.scss", "dependenciesAny": ["foundation"] },
+
+      { "matchValue": "scss/vendors/_normalize.scss", "dependenciesAny": ["foundation", "bootstrap"] },
+      { "matchValue": "scss/base/_forms.scss", "dependenciesAny": ["foundation", "bootstrap"] },
+      { "matchValue": "scss/base/_functions.scss", "dependenciesAny": ["foundation", "bootstrap"] },
+      { "matchValue": "scss/base/_typography.scss", "dependenciesAny": ["foundation", "bootstrap"] },
+      
       { "matchValue": "wp-bootstrap-index.html", "excludeIf": ["wp"] },
       { "matchValue": "scss/wp-bootstrap-style.scss", "excludeIf": ["wp"] },
       { "matchValue": "scss/base/_cms-reset.scss", "dependenciesAny":["bootstrap", "magento", "foundation"] },
-      { "matchValue": "scss/base/_markup-variables.scss", "dependenciesAny":["bootstrap", "magento", "foundation"] },
+      { "matchValue": "scss/base/_variables.scss", "dependenciesAny":["bootstrap", "magento", "foundation"] },
+      { "matchValue": "scss/base/_reset.scss", "dependenciesAny":["bootstrap", "magento", "foundation"] },
       { "matchValue": "scss/base/_markup-mixins.scss", "dependenciesAny":["magento"] },
-      { "matchValue": "scss/base/_mq.scss", "dependenciesAny":["magento"] },
-      { "matchValue": "scss/base/_base-reset.scss", "dependenciesAny":["other_cms", "wp", "bootstrap", "magento", "foundation"] },
+      
       { "matchValue": "index.html", "dependenciesAll":["bootstrap", "wp"] },
       { "matchValue": "scss/app.scss", "dependenciesAll":["foundation", "wp"] },
       { "matchValue": "scss/index.html", "dependenciesAny": ["magento"] },
