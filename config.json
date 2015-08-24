@@ -106,6 +106,7 @@
       { "matchValue": "scss/main.scss", "dependenciesAny": ["wp", "magento"] },
 
       { "matchValue": "scss/main.scss", "dependenciesAny": ["foundation"] },
+      { "matchValue": "scss/base/_wp-reset.scss", "dependenciesAny": ["foundation", "bootstrap"] },
       { "matchValue": "scss/style.scss", "dependenciesAny": ["foundation"] },
 
       { "matchValue": "scss/vendors/_normalize.scss", "dependenciesAny": ["foundation", "bootstrap"] },
@@ -125,6 +126,7 @@
       { "matchValue": "scss/index.html", "dependenciesAny": ["magento"] },
       { "matchValue": "wp-foundation-grunt-settings.js", "excludeIf": ["wp"] },
       { "matchValue": "wp-foundation-index.html", "excludeIf": ["wp"] },
+      { "matchValue": "scss/base/_wp-reset-fw.scss", "excludeIf": ["foundation", "bootstrap"] },
       { "matchValue": "scss/wp-foundation-app.scss", "excludeIf": ["wp"] }
     ],
     "rename": [
