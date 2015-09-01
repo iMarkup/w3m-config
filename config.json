@@ -138,6 +138,10 @@
       { "matchValue": "index.html", "dependenciesAny": ["magento"] },
       { "matchValue": "wp-foundation-grunt-settings.js", "excludeIf": ["wp"] },
       { "matchValue": "wp-foundation-index.html", "excludeIf": ["wp"] },
+
+      { "matchValue": "wp-materialize-grunt-settings.js", "excludeIf": ["wp"] },
+      { "matchValue": "wp-materialize-index.html", "excludeIf": ["wp"] },
+      
       { "matchValue": "scss/base/_wp-reset-fw.scss", "excludeIf": ["foundation", "bootstrap", "materialize"] },
       { "matchValue": "scss/wp-foundation-app.scss", "excludeIf": ["wp"] },
       { "matchValue": "scss/wp-materialize-app.scss", "excludeIf": ["wp"] }
