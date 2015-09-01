@@ -39,6 +39,10 @@
         {
           "caption": "Zurb Foundation",
           "value": "foundation"
+        },
+        {
+          "caption": "Materialize",
+          "value": "materialize"
         }
       ]
     },
@@ -63,6 +67,10 @@
             {
               "caption": "Zurb Foundation",
               "value": "foundation"
+            },
+            {
+              "caption": "Materialize",
+              "value": "materialize"
             }
           ]
         },
@@ -86,6 +94,10 @@
             {
               "caption": "Zurb Foundation",
               "value": "foundation"
+            },
+            {
+              "caption": "Materialize",
+              "value": "materialize"
             }
           ]
         }
@@ -100,45 +112,47 @@
       { "matchValue": "git://github.com/iMarkup/grunt-add-wp.git", "dependenciesAll": ["wp"] },
       { "matchValue": "git://github.com/iMarkup/grunt-add-bootstrap.git", "dependenciesAny": ["bootstrap"] },
       { "matchValue": "git://github.com/iMarkup/grunt-add-foundation.git", "dependenciesAny": ["foundation"] },
+      { "matchValue": "git://github.com/iMarkup/grunt-add-materialize.git", "dependenciesAny": ["materialize"] },
       { "matchValue": "git://github.com/iMarkup/grunt-add-magento-19.git", "dependenciesAny": ["magento"] }
     ],
     "ignore": [
       { "matchValue": "scss/main.scss", "dependenciesAny": ["wp", "magento"] },
 
       { "matchValue": "scss/main.scss", "dependenciesAny": ["foundation"] },
-      { "matchValue": "scss/base/_wp-reset.scss", "dependenciesAny": ["foundation", "bootstrap"] },
+      { "matchValue": "scss/base/_wp-reset.scss", "dependenciesAny": ["foundation", "bootstrap", "materialize"] },
       { "matchValue": "scss/style.scss", "dependenciesAny": ["foundation"] },
 
-      { "matchValue": "scss/vendors/_normalize.scss", "dependenciesAny": ["foundation", "bootstrap"] },
-      { "matchValue": "scss/base/_forms.scss", "dependenciesAny": ["foundation", "bootstrap"] },
-      { "matchValue": "scss/base/_functions.scss", "dependenciesAny": ["foundation", "bootstrap"] },
-      { "matchValue": "scss/base/_typography.scss", "dependenciesAny": ["foundation", "bootstrap"] },
+      { "matchValue": "scss/vendors/_normalize.scss", "dependenciesAny": ["foundation", "bootstrap", "materialize"] },
+      { "matchValue": "scss/base/_forms.scss", "dependenciesAny": ["foundation", "bootstrap", "materialize"] },
+      { "matchValue": "scss/base/_functions.scss", "dependenciesAny": ["foundation", "bootstrap", "materialize"] },
+      { "matchValue": "scss/base/_typography.scss", "dependenciesAny": ["foundation", "bootstrap", "materialize"] },
       
       { "matchValue": "wp-bootstrap-index.html", "excludeIf": ["wp"] },
       { "matchValue": "scss/wp-bootstrap-style.scss", "excludeIf": ["wp"] },
-      { "matchValue": "scss/base/_cms-reset.scss", "dependenciesAny":["bootstrap", "magento", "foundation"] },
-      { "matchValue": "scss/base/_variables.scss", "dependenciesAny":["bootstrap", "magento", "foundation"] },
-      { "matchValue": "scss/base/_reset.scss", "dependenciesAny":["bootstrap", "magento", "foundation"] },
-      { "matchValue": "scss/base/_markup-mixins.scss", "dependenciesAny":["magento"] },
+      { "matchValue": "scss/base/_cms-reset.scss", "dependenciesAny":["bootstrap", "magento", "foundation", "materialize"] },
+      { "matchValue": "scss/base/_variables.scss", "dependenciesAny":["bootstrap", "magento", "foundation", "materialize"] },
+      { "matchValue": "scss/base/_reset.scss", "dependenciesAny":["bootstrap", "magento", "foundation", "materialize"] },
       
       { "matchValue": "index.html", "dependenciesAll":["bootstrap", "wp"] },
       { "matchValue": "scss/app.scss", "dependenciesAll":["foundation", "wp"] },
-      { "matchValue": "scss/index.html", "dependenciesAny": ["magento"] },
+      { "matchValue": "index.html", "dependenciesAny": ["magento"] },
       { "matchValue": "wp-foundation-grunt-settings.js", "excludeIf": ["wp"] },
       { "matchValue": "wp-foundation-index.html", "excludeIf": ["wp"] },
-      { "matchValue": "scss/base/_wp-reset-fw.scss", "excludeIf": ["foundation", "bootstrap"] },
-      { "matchValue": "scss/wp-foundation-app.scss", "excludeIf": ["wp"] }
+      { "matchValue": "scss/base/_wp-reset-fw.scss", "excludeIf": ["foundation", "bootstrap", "materialize"] },
+      { "matchValue": "scss/wp-foundation-app.scss", "excludeIf": ["wp"] },
+      { "matchValue": "scss/wp-materialize-app.scss", "excludeIf": ["wp"] }
     ],
     "rename": [
       { "matchValue": {"scss/wp-bootstrap-style.scss":"scss/style.scss"}, "dependenciesAll": ["wp", "bootstrap"] },
       { "matchValue": {"wp-bootstrap-index.html":"index.html"}, "dependenciesAll": ["wp", "bootstrap"] },
       { "matchValue": {"wp-foundation-grunt-settings.js":"grunt-settings.js"}, "dependenciesAll": ["wp", "foundation"] },
       { "matchValue": {"wp-foundation-index.html":"index.html"}, "dependenciesAll": ["wp", "foundation"] },
-      { "matchValue": {"scss/base/_wp-reset-fw.scss":"scss/base/_wp-reset.scss"}, "dependenciesAny": ["bootstrap", "foundation"] },
-      { "matchValue": {"scss/wp-foundation-app.scss":"scss/app.scss"}, "dependenciesAll": ["wp", "foundation"] }
+      { "matchValue": {"scss/base/_wp-reset-fw.scss":"scss/base/_wp-reset.scss"}, "dependenciesAny": ["bootstrap", "foundation", "materialize"] },
+      { "matchValue": {"scss/wp-foundation-app.scss":"scss/app.scss"}, "dependenciesAll": ["wp", "foundation"] },
+      { "matchValue": {"scss/wp-materialize-main.scss":"scss/main.scss"}, "dependenciesAll": ["wp", "materialize"] }
     ],
     "run": [
-      { "matchValue": "bower install", "dependenciesAny": ["foundation"] },
+      { "matchValue": "bower install", "dependenciesAny": ["foundation", "materialize"] },
       { "matchValue": "npm install" },
       { "matchValue": "grunt" }
     ]
