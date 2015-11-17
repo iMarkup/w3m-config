@@ -158,6 +158,7 @@
       { "matchValue": {"scss/base/_wp-reset-fw.scss":"scss/base/_wp-reset.scss"}, "dependenciesAny": ["bootstrap", "foundation", "materialize"] },
       { "matchValue": {"scss/wp-foundation-app.scss":"scss/app.scss"}, "dependenciesAll": ["wp", "foundation"] },
       { "matchValue": {"scss/wp-materialize-main.scss":"scss/style.scss"}, "dependenciesAll": ["wp", "materialize"] },
+      { "matchValue": {"wp-materialize-index.html":"index.html"}, "dependenciesAll": ["wp", "materialize"] },
       { "matchValue": {"wp-materialize-grunt-settings.js":"grunt-settings.js"}, "dependenciesAll": ["wp", "materialize"] }
     ],
     "run": [
