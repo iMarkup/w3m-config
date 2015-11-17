@@ -153,7 +153,7 @@
       { "matchValue": {"wp-foundation-index.html":"index.html"}, "dependenciesAll": ["wp", "foundation"] },
       { "matchValue": {"scss/base/_wp-reset-fw.scss":"scss/base/_wp-reset.scss"}, "dependenciesAny": ["bootstrap", "foundation", "materialize"] },
       { "matchValue": {"scss/wp-foundation-app.scss":"scss/app.scss"}, "dependenciesAll": ["wp", "foundation"] },
-      { "matchValue": {"scss/wp-materialize-main.scss":"scss/main.scss"}, "dependenciesAll": ["wp", "materialize"] }
+      { "matchValue": {"scss/wp-materialize-main.scss":"scss/style.scss"}, "dependenciesAll": ["wp", "materialize"] }
     ],
     "run": [
       { "matchValue": "bower install", "dependenciesAny": ["foundation", "materialize"] },
