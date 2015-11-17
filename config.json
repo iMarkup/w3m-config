@@ -1,5 +1,5 @@
 {
-  "copyright": "\n********************************************\n* 2005–2014 All Rights Reserved. P2H, Inc. *\n********************************************\n",
+  "copyright": "\n********************************************\n* 2005–2015 All Rights Reserved. P2H, Inc. *\n********************************************\n",
   "updateMenu": [
     {
       "question": "Select action:",
@@ -128,12 +128,14 @@
       { "matchValue": "scss/base/_typography.scss", "dependenciesAny": ["foundation", "bootstrap", "materialize"] },
       
       { "matchValue": "wp-bootstrap-index.html", "excludeIf": ["wp"] },
+      { "matchValue": "wp-bootstrap-index.html", "excludeIf": ["wp"] },
       { "matchValue": "scss/wp-bootstrap-style.scss", "excludeIf": ["wp"] },
       { "matchValue": "scss/base/_cms-reset.scss", "dependenciesAny":["bootstrap", "magento", "foundation", "materialize"] },
       { "matchValue": "scss/base/_variables.scss", "dependenciesAny":["bootstrap", "magento", "foundation", "materialize"] },
       { "matchValue": "scss/base/_reset.scss", "dependenciesAny":["bootstrap", "magento", "foundation", "materialize"] },
       
       { "matchValue": "index.html", "dependenciesAll":["bootstrap", "wp"] },
+      { "matchValue": "grunt-settings.js", "dependenciesAll":["materialize", "wp"] },
       { "matchValue": "scss/app.scss", "dependenciesAll":["foundation", "wp"] },
       { "matchValue": "index.html", "dependenciesAny": ["magento"] },
       { "matchValue": "wp-foundation-grunt-settings.js", "excludeIf": ["wp"] },
@@ -153,7 +155,8 @@
       { "matchValue": {"wp-foundation-index.html":"index.html"}, "dependenciesAll": ["wp", "foundation"] },
       { "matchValue": {"scss/base/_wp-reset-fw.scss":"scss/base/_wp-reset.scss"}, "dependenciesAny": ["bootstrap", "foundation", "materialize"] },
       { "matchValue": {"scss/wp-foundation-app.scss":"scss/app.scss"}, "dependenciesAll": ["wp", "foundation"] },
-      { "matchValue": {"scss/wp-materialize-main.scss":"scss/style.scss"}, "dependenciesAll": ["wp", "materialize"] }
+      { "matchValue": {"scss/wp-materialize-main.scss":"scss/style.scss"}, "dependenciesAll": ["wp", "materialize"] },
+      { "matchValue": {"wp-materialize-grunt-settings.js":"grunt-settings.js"}, "dependenciesAll": ["wp", "materialize"] }
     ],
     "run": [
       { "matchValue": "bower install", "dependenciesAny": ["foundation", "materialize"] },
