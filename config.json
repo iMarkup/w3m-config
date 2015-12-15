@@ -123,6 +123,7 @@
       { "matchValue": "scss/style.scss", "dependenciesAny": ["foundation"] },
 
       { "matchValue": "scss/vendors/_normalize.scss", "dependenciesAny": ["foundation", "bootstrap", "materialize"] },
+      { "matchValue": "scss/vendors/_include-media.scss", "dependenciesAny": ["foundation"] },
       { "matchValue": "scss/base/_forms.scss", "dependenciesAny": ["foundation", "bootstrap", "materialize"] },
       { "matchValue": "scss/base/_functions.scss", "dependenciesAny": ["foundation", "bootstrap", "materialize"] },
       { "matchValue": "scss/base/_typography.scss", "dependenciesAny": ["foundation", "bootstrap", "materialize"] },
