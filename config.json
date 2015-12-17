@@ -129,7 +129,7 @@
       { "matchValue": "scss/base/_typography.scss", "dependenciesAny": ["foundation", "bootstrap", "materialize"] },
       
       { "matchValue": "wp-bootstrap-index.html", "excludeIf": ["wp"] },
-      { "matchValue": "wp-bootstrap-index.html", "excludeIf": ["wp"] },
+      { "matchValue": "wp-elements-bootstrap.html", "excludeIf": ["wp"] },
       { "matchValue": "wp-materialize-index.html", "excludeIf": ["wp"] },
       { "matchValue": "scss/wp-bootstrap-style.scss", "excludeIf": ["wp"] },
       { "matchValue": "scss/base/_cms-reset.scss", "dependenciesAny":["bootstrap", "magento", "foundation", "materialize"] },
