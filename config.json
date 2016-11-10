@@ -1,5 +1,5 @@
 {
-  "copyright": "\n********************************************\n* 2005–2016 All Rights Reserved. P2H, Inc. *\n********************************************\n",
+  "copyright": "\n********************************************\n* anupkumartamang@p2h.com *\n********************************************\n",
   "updateMenu": [
     {
       "question": "Select action:",
@@ -107,13 +107,13 @@
   "data": {
     "path": "markup",
     "source": [
-      { "matchValue": "git://github.com/iMarkup/grunt-base-template.git", "excludeIf": ["all"] },
-      { "matchValue": "git://github.com/iMarkup/grunt-add-cms.git", "dependenciesAny": ["other_cms", "wp"] },
-      { "matchValue": "git://github.com/iMarkup/grunt-add-wp.git", "dependenciesAll": ["wp"] },
-      { "matchValue": "git://github.com/iMarkup/grunt-add-bootstrap.git", "dependenciesAny": ["bootstrap"] },
-      { "matchValue": "git://github.com/iMarkup/grunt-add-foundation.git", "dependenciesAny": ["foundation"] },
-      { "matchValue": "git://github.com/iMarkup/grunt-add-materialize.git", "dependenciesAny": ["materialize"] },
-      { "matchValue": "git://github.com/iMarkup/grunt-add-magento-19.git", "dependenciesAny": ["magento"] }
+      { "matchValue": "git://github.com/anuptamang/grunt-base-template.git", "excludeIf": ["all"] },
+      { "matchValue": "git://github.com/anuptamang/grunt-add-cms.git", "dependenciesAny": ["other_cms", "wp"] },
+      { "matchValue": "git://github.com/anuptamang/grunt-add-wp.git", "dependenciesAll": ["wp"] },
+      { "matchValue": "git://github.com/anuptamang/grunt-add-bootstrap.git", "dependenciesAny": ["bootstrap"] },
+      { "matchValue": "git://github.com/anuptamang/grunt-add-foundation.git", "dependenciesAny": ["foundation"] },
+      { "matchValue": "git://github.com/anuptamang/grunt-add-materialize.git", "dependenciesAny": ["materialize"] },
+      { "matchValue": "git://github.com/anuptamang/grunt-add-magento-19.git", "dependenciesAny": ["magento"] }
     ],
     "ignore": [
       { "matchValue": "scss/main.scss", "dependenciesAny": ["wp", "magento"] },
